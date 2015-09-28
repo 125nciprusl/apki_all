@@ -1,0 +1,268 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.prus.kalkulatorloupre.SecondActivity">
+
+
+
+    <ImageView
+        android:id="@+id/imageViewW"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@drawable/p_0"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Prowizja: "
+        android:id="@+id/textView"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/imageViewW"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Równowaga: "
+        android:id="@+id/textView2"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/imageViewW"
+        android:layout_below="@+id/textView"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_toRightOf="@+id/imageViewW"
+        android:layout_marginTop="0dp"
+        android:id="@+id/linearLayout1">
+
+        <TextView
+            android:layout_below="@+id/textView2"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Punkty Własne: "
+            android:id="@+id/textView3" />
+
+        <EditText
+            android:layout_below="@+id/textView3"
+            android:text="150"
+            android:textSize="15dp"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextW"
+
+            android:inputType="number" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Punkty Grupy: "
+        android:id="@+id/textView4"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/imageViewW"
+        android:layout_below="@+id/linearLayout1"/>
+
+
+
+
+
+
+
+        // PIERWSZA LINIA
+
+    <ImageView
+        android:layout_below="@+id/imageViewW"
+        android:layout_marginTop="10dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageViewJeden"
+        android:src="@drawable/p_0"/>
+
+    <TextView
+        android:gravity="center"
+        android:layout_below="@+id/imageViewW"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Pierwsza Linia"
+        android:id="@+id/textViewJeden"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/imageViewJeden"/>
+
+    <EditText
+        android:layout_below="@+id/textViewJeden"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextJeden"
+        android:layout_weight="1"
+        android:inputType="number"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/imageViewJeden"/>
+
+
+
+
+
+
+    // DRUGA LINIA
+
+    <ImageView
+        android:layout_below="@+id/imageViewJeden"
+        android:layout_marginTop="10dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageViewDwa"
+        android:src="@drawable/p_0"/>
+
+    <TextView
+        android:gravity="center"
+        android:layout_below="@+id/imageViewJeden"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Druga Linia"
+        android:id="@+id/textViewDwa"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/imageViewJeden"/>
+
+    <EditText
+        android:layout_below="@+id/textViewDwa"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextDwa"
+        android:layout_weight="1"
+        android:inputType="number"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/imageViewJeden"/>
+
+
+
+
+
+    // TRZECIA LINIA
+
+    <ImageView
+        android:layout_below="@+id/imageViewDwa"
+        android:layout_marginTop="10dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageViewTrzy"
+        android:src="@drawable/p_0"/>
+
+    <TextView
+        android:gravity="center"
+        android:layout_below="@+id/imageViewDwa"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Trzecia Linia"
+        android:id="@+id/textViewTrzy"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/imageViewJeden"/>
+
+    <EditText
+        android:layout_below="@+id/textViewTrzy"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextTrzy"
+        android:layout_weight="1"
+        android:inputType="number"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/imageViewJeden"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Oblicz"
+        android:id="@+id/button"
+        android:layout_below="@+id/imageViewTrzy"
+        android:layout_marginTop="5dp"
+        android:onClick="oblicz"/>
+
+
+
+
+    // NOWY UPDATE: CHECKBOXY
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DB"
+        android:id="@+id/checkBoxJeden"
+        android:layout_alignTop="@+id/editTextJeden"
+        android:layout_toRightOf="@+id/textViewJeden"
+        android:layout_marginLeft="10dp"
+        android:enabled="false"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DB"
+        android:id="@+id/checkBoxDwa"
+        android:layout_alignTop="@+id/editTextDwa"
+        android:layout_toRightOf="@+id/textViewJeden"
+        android:layout_marginLeft="10dp"
+        android:enabled="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DB"
+        android:id="@+id/checkBoxTrzy"
+        android:layout_alignTop="@+id/editTextTrzy"
+        android:layout_toRightOf="@+id/textViewJeden"
+        android:layout_marginLeft="10dp"
+        android:enabled="false"  />
+
+
+
+
+    //
+    //                  STOPKA
+    //
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Autor: Łukasz Prus / v1.0"
+        android:id="@+id/textView7"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2 Linie"
+        android:id="@+id/button2"
+        android:onClick="dwieLinie"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+</RelativeLayout>
